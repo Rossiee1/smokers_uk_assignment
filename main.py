@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 import pandas as pd
 import matplotlib.pyplot as plt
-import matplotlib.ticker as mtick
 
 # Load the CSV file into our pandas DataFrame
 df = pd.read_csv('smoking.csv')
@@ -88,6 +87,7 @@ def bar_plot():
     plt.ylabel("Number of Smokers")
     plt.show()
     plt.savefig('figure_3.png')
+    return
 
 
 if __name__ == "__main__":
